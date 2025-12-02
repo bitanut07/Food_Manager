@@ -2,6 +2,7 @@ package controllers
 
 import (
 	"goravel/app/models"
+	"strconv"
 
 	"github.com/goravel/framework/contracts/http"
 	"github.com/goravel/framework/facades"
@@ -116,7 +117,7 @@ func (category *CategoryController) Update(ctx http.Context) http.Response {
 func (category *CategoryController) Delete(ctx http.Context) http.Response {
 	var err error
 	validator, err := ctx.Request().Validate(map[string]string{
-		"id": "required|integer",
+		"id": "required",
 	})
 	if err != nil {
 		return ctx.Response().Json(500, map[string]interface{}{
@@ -130,6 +131,13 @@ func (category *CategoryController) Delete(ctx http.Context) http.Response {
 			"errors":  validator.Errors().All(),
 		})
 	}
+	idStr := ctx.Request().Input("id")
+	id, err := strconv.ParseInt(idStr, 10, 64)
+	if err != nil {
+		return ctx.Response().Json(422, http.Json{
+			"message": "Invalid id",
+		})
+	}
 
 	tx, err := facades.Orm().Query().Begin()
 	if err != nil {
@@ -139,7 +147,7 @@ func (category *CategoryController) Delete(ctx http.Context) http.Response {
 		})
 	}
 
-	if _, err = tx.Model(&models.Category{}).Where("id", ctx.Request().Input("id")).Delete(); err != nil {
+	if _, err = tx.Model(&models.Category{}).Where("id", id).Delete(); err != nil {
 		tx.Rollback()
 		return ctx.Response().Json(500, map[string]interface{}{
 			"message": "Failed to delete category",
@@ -177,9 +185,16 @@ func (category *CategoryController) GetAll(ctx http.Context) http.Response {
 
 func (category *CategoryController) GetById(ctx http.Context) http.Response {
 	var err error
+	idStr := ctx.Request().Input("id")
+	id, err := strconv.ParseInt(idStr, 10, 64)
+	if err != nil {
+		return ctx.Response().Json(422, http.Json{
+			"message": "Invalid id",
+		})
+	}
 
 	categoryModel := models.Category{}
-	if err = facades.Orm().Query().Model(&models.Category{}).Where("id", ctx.Request().Input("id")).First(&categoryModel); err != nil {
+	if err = facades.Orm().Query().Model(&models.Category{}).Where("id", id).First(&categoryModel); err != nil {
 		return ctx.Response().Json(500, map[string]interface{}{
 			"message": "Internal server error",
 			"error":   err.Error(),

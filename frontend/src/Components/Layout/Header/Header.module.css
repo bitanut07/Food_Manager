@@ -1,0 +1,224 @@
+a {
+  text-decoration: none;
+}
+
+.site-header {
+  position: sticky;
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  transition: 0.5s;
+  border-bottom: 1px solid transparent;
+  background: rgba(255, 255, 255, 0.8); /* Tạo nền mờ nhẹ */
+  backdrop-filter: blur(5px); /* Làm mờ nền phía sau */
+}
+
+.container {
+  composes: container from "../../../Style/bootstrap.min.css";
+}
+
+.row {
+  composes: row from "../../../Style/bootstrap.min.css";
+}
+
+.col-lg-2 {
+  composes: col-lg-2 from "../../../Style/bootstrap.min.css";
+}
+
+.col-lg-10 {
+  composes: col-lg-10 from "../../../Style/bootstrap.min.css";
+}
+
+.logo-text {
+  font-family: "Lobster", cursive;
+  font-size: 24px; /* Kích thước chữ lớn */
+  color: #35737d; /* Màu xanh nhã */
+  font-weight: bold;
+  text-transform: uppercase; /* Viết hoa tất cả chữ */
+  letter-spacing: 1px; /* Giãn chữ một chút */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Hiệu ứng đổ bóng */
+  transition: color 0.3s ease; /* Hiệu ứng khi hover */
+  white-space: nowrap;
+}
+
+.logo-text:hover {
+  color: #a38900;
+}
+
+.main-navigation {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+}
+
+.header-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 15px; /* Giảm khoảng cách giữa các mục menu */
+  margin: 0;
+  padding: 0;
+}
+
+.header-menu li {
+  display: inline-block;
+  position: relative;
+  margin: 0 6px;
+}
+
+.header-menu a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 8px 12px; /* Giảm khoảng cách padding */
+  transition: color 0.3s;
+}
+
+/* Hiệu ứng gạch chân */
+.header-menu a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px; /* Gạch chân cách chữ 5px */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #ad6d4d; /* Màu gạch chân */
+  transition: width 0.3s ease;
+}
+
+/* Khi hover hoặc active */
+.header-menu a:hover:not(.login-btn):not(.signup-btn)::after,
+.header-menu a.active::after {
+  width: 100%; /* Gạch chân mở rộng toàn bộ chữ */
+}
+
+.header-menu a:hover,
+.header-menu a.active {
+  color: #ad6d4d;
+}
+
+.header-menu .login-btn {
+  background-color: #d4a373;
+  padding: 10px 18px; /* Giảm padding */
+  text-align: center;
+  justify-content: center;
+  border-radius: 30px;
+  transition: background-color 0.3s;
+  margin-left: 15px; /* Tạo khoảng cách với menu */
+  line-height: 1;
+  box-shadow: 9px 9px 12px #b2b2b3, -9px -9px 12px #ffffff;
+  text-decoration: none !important;
+  transition: all 0.3s ease;
+}
+
+.header-menu .login-btn:hover {
+  background-color: white;
+  color: #a56f6f;
+  border-color: #0d0d25;
+  box-shadow: inset 9px 9px 12px #cccccc, inset -9px -9px 12px #ffffff;
+  text-decoration: none !important;
+}
+
+.header-menu .signup-btn {
+  background-color: #a38900;
+  color: #ffffff;
+  padding: 10px 18px; /* Giảm padding */
+  text-align: center;
+  justify-content: center;
+  border-radius: 30px;
+  transition: background-color 0.3s;
+  margin-left: 15px; /* Tạo khoảng cách với menu */
+  line-height: 1;
+  box-shadow: 9px 9px 12px #b2b2b3, -9px -9px 12px #ffffff;
+  transition: all 0.3s ease;
+  text-decoration: none !important;
+}
+
+.header-menu .signup-btn:hover {
+  background-color: white;
+  color: #a0592a;
+  border-color: #0d0d25;
+  box-shadow: inset 9px 9px 12px #cccccc, inset -9px -9px 12px #ffffff;
+  text-decoration: none !important;
+}
+
+.user-dropdown {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 64px;
+  width: 250px;
+  background: rgb(255, 255, 255);
+  outline: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-list li {
+  padding: 10px;
+}
+
+.logout-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logout-section .logout-button {
+  width: 200px;
+  padding: 10px;
+  background-color: #35737d;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.logout-section .logout-button:hover {
+  color: #b22222;
+}
+
+/* Cart icon with badge */
+.cart-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+}
+
+.cart-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #c9a227;
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
+  min-width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4px;
+}

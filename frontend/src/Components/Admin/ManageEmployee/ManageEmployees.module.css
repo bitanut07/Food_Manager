@@ -1,0 +1,173 @@
+.manage-employees {
+  border-radius: 8px;
+  margin-top: 30px;
+  text-align: center;
+  margin-bottom: flex;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.manage-employees .header h2 {
+  text-align: center;
+  font-size: 42px;
+  font-weight: bold;
+  color: #514f00;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.manage-employees .button-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 20px;
+}
+
+.manage-employees .no-employee {
+  text-align: left;
+  margin-top: 20px;
+  font-size: 22px;
+  color: #000000;
+  font-style: italic;
+  padding: 15px;
+}
+
+.manage-employees .name_container h2 {
+  font-size: 28px;
+  color: #1a1a1a;
+}
+
+.manage-employees h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.manage-employees .employee-table-container {
+  margin: 100px auto 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 5px;
+  margin-bottom: flex;
+}
+
+.manage-employees .employee-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.manage-employees .employee-table th,
+.manage-employees .employee-table td {
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+}
+
+.manage-employees .employee-table th {
+  background-color: #ffd7d7;
+  color: #333;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.manage-employees .employee-table td {
+  background-color: #ffe5e5;
+  font-size: 18px;
+}
+
+.manage-employees .action-buttons {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.manage-employees .delete-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.manage-employees .delete-button {
+  color: #f44336;
+}
+
+.manage-employees .delete-button:hover {
+  transform: translateY(-2px);
+}
+
+.manage-employees .manage-employee-button {
+  display: block;
+  padding: 7px 10px;
+  background-color: #116169;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.manage-employees .manage-employee-button:hover {
+  background-color: #1e7f8b;
+  transform: translateY(-2px);
+}
+
+.manage-employees .tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+.manage-employees .tooltip {
+  visibility: hidden;
+  background-color: black;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  border-radius: 4px;
+  position: absolute;
+  bottom: 125%; /* Hiển thị phía trên */
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.manage-employees .tooltip-container:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

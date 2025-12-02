@@ -1,0 +1,120 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Màu overlay mờ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+
+.modal-header p {
+    all: unset !important;
+    font-size: 20px !important; /* Tăng kích thước chữ */
+    font-weight: bold !important; /* In đậm chữ */
+    color: #333 !important; /* Màu chữ đậm dễ đọc */
+    margin: 0 !important; /* Loại bỏ margin mặc định */
+    padding: 10px 0 !important; /* Thêm khoảng cách giữa biểu tượng và văn bản */
+    text-align: center !important; /* Căn giữa văn bản */
+}
+
+.modal-header {
+    all: unset !important;
+    font-size: 24px !important;
+    font-weight: bold !important;
+    color: #333 !important;
+    margin-bottom: 10px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 25px !important;
+}
+
+.modal-header .modal-icon {
+    font-size: 40px;
+    color: #ff4d4f;
+}
+
+.modal-body {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.modal-buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.modal-buttons .modal-confirm-button {
+    background: #c46c6c;
+    color: #fff;
+}
+
+.modal-buttons .modal-confirm-button:hover {
+    background: #a6696e;
+}
+
+.modal-content {
+    position: relative; /* Đặt relative để nút "X" căn chỉnh theo modal */
+    background: white;
+    padding: 20px;
+    width: 400px; /* Chiều rộng modal */
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal-close-button {
+    all: unset !important; /* Gỡ bỏ mọi kiểu dáng đã được áp dụng */
+    position: absolute !important;
+    top: 10px !important;
+    right: 10px !important;
+    background: none !important;
+    border: none !important;
+    font-size: 20px !important;
+    cursor: pointer !important;
+    color: #333 !important;
+}
+
+.modal-close-button:hover {
+    color: #e63946 !important; /* Màu khi hover */
+}
+
+.modal-header.success {
+    color: green !important; /* Màu xanh lá cây cho modal success */
+}
+
+.modal-header.error {
+    color: red; /* Màu đỏ cho modal error */
+}
+
+.modal-header.confirm {
+    color: blue; /* Màu xanh dương cho modal confirm */
+}
+
+
+/* Hiệu ứng */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

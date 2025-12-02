@@ -1,0 +1,320 @@
+.manage-menu-container {
+  display: flex;
+  font-family: "Times New Roman", Times, serif;
+  margin-left: 10px;
+}
+
+.manage-menu-container h2 {
+  text-align: center;
+  font-size: 42px;
+  font-weight: bold;
+  color: #514f00;
+  letter-spacing: 1px;
+}
+
+.manage-menu-container h3 {
+  margin-top: 50px;
+  font-size: 36px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.manage-menu-container h5 {
+  color: #5a0808;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 2.4em;
+  font-size: 20px;
+}
+
+.manage-menu-container button:hover {
+  transform: translateY(-2px);
+}
+
+.manage-menu-container .delete-button:hover {
+  transform: translateY(-2px);
+}
+.manage-menu-container .no-food-message {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 22px;
+  color: #000000;
+  font-style: italic;
+  padding: 15px;
+}
+
+.manage-menu-container .no-menutab-message {
+  text-align: left;
+  font-size: 22px;
+  color: #000000;
+  font-style: italic;
+}
+
+/* Sidebar Styles */
+.manage-menu-container .menu-sidebar {
+  width: 20%;
+  padding: 1rem;
+}
+
+.manage-menu-container .menu-sidebar h3,
+.manage-menu-container .menu-sidebar h4 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.manage-menu-container .menu-tab {
+  display: block;
+  width: 70%;
+  margin: 0 0;
+  padding: 10px;
+  color: #ffffff;
+  background-color: #8f8686;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.manage-menu-container .menu-tab.active {
+  background-color: rgb(141, 89, 40);
+  color: #ffffff;
+}
+
+.manage-menu-container .add-category-button {
+  display: block;
+  padding: 7px 10px;
+  background-color: #116169;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.manage-menu-container .menu-tab-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.manage-menu-container .edit-category-button,
+.manage-menu-container .delete-category-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 5px;
+}
+
+.manage-menu-container .edit-category-button {
+  color: #116169;
+}
+
+.manage-menu-container .delete-category-button {
+  color: #f44336;
+}
+
+/* Main Content */
+.manage-menu-container .menu-content {
+  width: 80%;
+  padding: 2rem;
+  text-align: center;
+}
+
+.manage-menu-container .food-items-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.manage-menu-container .food-price {
+  font-size: 1rem;
+  color: #888; /* Màu xám nhạt */
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+
+.manage-menu-container .food-item-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  width: 200px;
+  padding: 5px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 290px;
+}
+
+.manage-menu-container .food-image {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.manage-menu-container .food-card-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  border: none;
+}
+
+.manage-menu-container .edit-button,
+.manage-menu-container .delete-button {
+  background-color: #fff;
+  border: none;
+  padding: 0.2rem 0.4rem;
+}
+
+.manage-menu-container .edit-button {
+  color: #116169;
+  margin-right: 20px;
+}
+
+.manage-menu-container .delete-button {
+  color: #f44336;
+}
+
+.manage-menu-container .button-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 20px;
+}
+
+.manage-menu-container .add-food-button {
+  display: block;
+  padding: 7px 10px;
+  background-color: #116169;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.manage-menu-container .modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.manage-menu-container .modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 90%;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.manage-menu-container .modal-content input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.manage-menu-container .modal-content button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.manage-menu-container .modal-content .save-button {
+  background-color: #0f4758;
+  color: white;
+}
+
+.manage-menu-container .modal-content .cancel-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.manage-menu-container .modal-content .save-button:hover,
+.manage-menu-container .modal-content .cancel-button:hover {
+  transform: translateY(-2px);
+}
+
+.manage-menu-container .tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+.manage-menu-container .tooltip {
+  visibility: hidden;
+  background-color: black;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  border-radius: 4px;
+  position: absolute;
+  bottom: 125%; /* Hiển thị phía trên */
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.manage-menu-container .tooltip-container:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,52 @@
+.container{
+    composes: container from '../../Style/bootstrap.min.css';   
+}
+
+.row{
+    composes: row from '../../Style/bootstrap.min.css';
+}
+
+.col-lg-12{
+    composes: col-lg-12 from '../../Style/bootstrap.min.css';
+}
+
+.col-lg-6{
+    composes: col-lg-6 from '../../Style/bootstrap.min.css';
+}
+
+.alert-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.expired-alert{
+    padding: 20px;
+    margin:auto;
+    width: 500px;
+    text-align: center;
+    border: 2px solid rgba(255, 56, 56, 0.5);
+    border-radius: 8px;
+    background-color: rgba(255, 56, 56, 0.2);
+}
+
+.alert-mess{
+    color:#ff3838;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.alert-btn-exit{
+
+}
+
+.alert-btn-login{
+    
+}

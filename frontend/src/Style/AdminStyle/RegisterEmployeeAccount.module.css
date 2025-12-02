@@ -1,0 +1,131 @@
+.password-input-container input[type="password"]::-ms-reveal,
+.password-input-container input[type="password"]::-ms-clear,
+.password-input-container input[type="password"]::-webkit-clear-button,
+.password-input-container input[type="password"]::-webkit-reveal-button {
+  display: none; /* Ẩn icon mặc định */
+}
+
+/* Toàn bộ container */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Hộp chứa form */
+.signup-box {
+  padding: 30px 80px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 500px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 5px;
+}
+
+/* Tiêu đề */
+.signup-box .title {
+  text-align: center;
+  font-size: 42px;
+  font-weight: bold;
+  color: #514f00;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Label */
+.signup-form .form-title {
+  display: block;
+  margin-bottom: 8px;
+  text-align: left;
+  color: #555;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Input chung */
+.signup-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Vùng chứa input và icon */
+.password-input-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.password-requirement {
+  font-size: 14px;
+  margin-right: auto;
+}
+
+/* Icon "mắt" */
+.password-toggle-icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #666;
+  transition: color 0.3s ease;
+  top: 20%;
+}
+
+/* Nút đăng ký */
+.signup-form .signup-btn {
+  margin-top: 50px;
+  width: 60%;
+  padding: 10px;
+  margin: auto;
+  background-color: #116169;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.signup-box .signup-btn:hover {
+  background-color: #1e7f8b;
+  transform: translateY(-2px);
+}
+
+/* Nút chuyển sang đăng nhập */
+.login-btn {
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+  text-decoration: underline;
+}
+
+.login-btn:hover {
+  color: #76abe3;
+}
+
+/* Lỗi */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}

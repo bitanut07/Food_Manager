@@ -1,0 +1,323 @@
+/* Container chính */
+.ManageRes-container {
+  max-width: 800px;
+  margin: 10px auto;
+  padding: 20px;
+  border-radius: 8px;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Tiêu đề */
+.ManageRes-container h1 {
+  font-weight: bold;
+  font-size: 42px;
+  color: #514f00;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+/* Form chính */
+.ManageRes-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Container cho từng mục (label + inputs) */
+.ManageRes-field {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Căn giữa theo chiều dọc */
+  justify-content: space-between;
+  gap: 15px;
+}
+
+/* Nhãn (label) */
+.ManageRes-field label {
+  font-weight: bold;
+  color: #555;
+  flex: 0 0 250px; /* Đặt độ rộng cố định cho label */
+  text-align: left;
+}
+
+.ManageRes-field p,
+.ManageRes-field a {
+  flex: 2;
+  font-size: 18px;
+  color: #333;
+  margin-top: 17px;
+}
+/* Container cho inputs + icon */
+.ManageRes-input {
+  display: flex;
+  align-items: center;
+  flex: 1; /* Chiếm hết không gian còn lại */
+  gap: 5px; /* Khoảng cách giữa input và icon */
+}
+
+/* Container từng input riêng biệt */
+.ManageRes-input-input {
+  display: flex;
+  align-items: center; /* Đảm bảo input và icon ở cùng hàng */
+  gap: 5px; /* Khoảng cách giữa input và icon */
+  width: 100%; /* Đặt chiều ngang toàn bộ */
+}
+
+/* Input */
+.ManageRes-input input {
+  flex: 1; /* Input chiếm không gian chính */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  font-size: 16px;
+}
+
+/* Hiệu ứng khi input được focus */
+.ManageRes-input input:focus {
+  border-color: #257581;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Icon chỉnh sửa */
+.ManageRes-input .edit-icon {
+  cursor: pointer; /* Thêm con trỏ để biểu thị có thể click */
+  color: #257581;
+  font-size: 20px;
+}
+
+.ManageRes-field a {
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.ManageRes-field a:hover {
+  text-decoration: underline;
+}
+
+/* Social Links Container */
+.ManageRes-field-social {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ManageRes-field-social label {
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+/* Social Links Items */
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 20px; /* Đẩy toàn bộ phần Facebook, Instagram,... sang phải */
+}
+
+.social-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-item label {
+  font-weight: bold;
+  color: #555;
+  flex: 1;
+  margin-left: 10px; /* Dịch tiêu đề như Facebook, Instagram,... sang phải */
+  text-align: right; /* Căn phải các tiêu đề */
+}
+
+.social-item input,
+.social-item a {
+  flex: 3;
+  font-size: 18px;
+  color: #333;
+}
+
+.social-item input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  font-size: 18px;
+}
+
+.social-item input:focus {
+  border-color: #257581;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.social-item a {
+  color: #333;
+  text-decoration: none;
+}
+
+.social-item a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+.ManageRes-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.ManageRes-actions button {
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ManageRes-actions .edit-button {
+  background-color: #257581;
+  color: white;
+}
+
+.ManageRes-actions .edit-button:hover {
+  background-color: #1e7f8b;
+  transform: translateY(-2px);
+}
+
+.ManageRes-actions .save-button {
+  background-color: #257581;
+  color: white;
+}
+
+.ManageRes-actions .save-button:hover {
+  background-color: #1e7f8b;
+  transform: translateY(-2px);
+}
+
+.ManageRes-actions .cancel-button:last-child {
+  background-color: #d3d3d3;
+  color: #fff;
+  border: 1px solid #ddd;
+}
+
+.ManageRes-actions .cancel-button:hover {
+  background-color: #b3b3b3;
+  transform: translateY(-2px);
+}
+
+/* Trạng thái Loading và Error */
+.ManageRes {
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .ManageRes-container {
+    padding: 15px;
+  }
+
+  .ManageRes-field {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .ManageRes-field label {
+    margin-bottom: 5px;
+  }
+
+  .social-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .ManageRes-actions {
+    justify-content: center;
+  }
+}
+/* Căn lề và khoảng cách giữa các mục */
+.ManageRes-field {
+  gap: 15px; /* Tăng khoảng cách giữa label và input */
+}
+
+.ManageRes-field-social {
+  padding-top: 10px; /* Tạo khoảng cách giữa label và phần social links */
+}
+
+.social-item {
+  gap: 15px; /* Tăng khoảng cách giữa label và input/link */
+}
+
+/* Cải thiện nút chỉnh sửa */
+.ManageRes-input {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Giảm khoảng cách giữa input và icon */
+}
+
+/* Tạo hiệu ứng hover */
+.ManageRes-input input:hover,
+.ManageRes-input input:focus {
+  border-color: #40916c;
+  box-shadow: 0 0 5px rgba(64, 145, 108, 0.5);
+}
+
+.ManageRes-actions button {
+  transition: all 0.3s ease;
+}
+
+.ManageRes-actions button:hover {
+  transform: scale(1.05); /* Tạo hiệu ứng zoom nhỏ */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .ManageRes-field {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .social-item {
+    flex-direction: column; /* Đưa các mục xuống dòng khi giao diện hẹp */
+  }
+}
+.ManageRes-field-image {
+  display: flex;
+  align-items: flex-start; /* Căn nội dung lên trên cùng */
+  justify-content: space-between; /* Đẩy label và ảnh sang hai bên */
+  gap: 20px; /* Khoảng cách giữa label và ảnh */
+  margin-top: 20px;
+}
+
+.ManageRes-field-image label {
+  font-weight: bold;
+  color: #555;
+  font-size: 18px;
+  flex: 1; /* Chiếm toàn bộ không gian bên trái */
+  text-align: left; /* Căn chữ về bên trái */
+}
+
+.ManageRes-field-image img {
+  max-width: 300px; /* Kích thước tối đa của ảnh */
+  max-height: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 0; /* Ảnh có kích thước cố định */
+  margin:auto;
+  margin-top: 10px;
+}
+
+.ManageRes-field-image input[type="file"] {
+  margin-bottom:auto;
+  display: flex; /* Đặt input dưới label */
+}

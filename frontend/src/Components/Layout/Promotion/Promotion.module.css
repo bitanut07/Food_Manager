@@ -1,0 +1,210 @@
+.promotions-container {
+  font-family: "Arial", sans-serif;
+  min-height: 100vh;
+  margin-top: 30px;
+}
+
+.promotions-container .content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.promotions-container .title-row {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.promotions-container .title-row h1 {
+  font-size: 42px;
+  line-height: 56px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: "Playfair Display", serif;
+  color: #ff6b35;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.promotions-container .error-message {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.promotions-container .no-promotions-message {
+  padding: 60px 20px;
+  text-align: center;
+  margin-top: 40px;
+  background: #f9f9f9;
+  border-radius: 16px;
+}
+
+.promotions-container .no-promotions-icon {
+  font-size: 64px;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+.promotions-container .no-promotions-message p {
+  font-size: 20px;
+  color: #888;
+}
+
+.promotions-container .promotions-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.promotions-container .promotion-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px dashed #ff6b35;
+}
+
+.promotions-container .promotion-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(255, 107, 53, 0.2);
+}
+
+.promotions-container .promotion-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.promotions-container .promotion-placeholder {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #ff6b35, #ff8c5a);
+  color: white;
+  font-size: 60px;
+}
+
+.promotions-container .promotion-content {
+  padding: 20px;
+}
+
+.promotions-container .promotion-code-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: linear-gradient(135deg, #ff6b35, #ff8c5a);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.promotions-container .promotion-title {
+  font-size: 18px;
+  color: #333;
+  margin: 0 0 12px 0;
+  font-weight: 600;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.promotions-container .promotion-discount {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.promotions-container .promotion-discount svg {
+  color: #ff6b35;
+}
+
+.promotions-container .promotion-discount span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #e65100;
+}
+
+.promotions-container .promotion-condition {
+  color: #666;
+  font-size: 13px;
+  margin: 0;
+}
+
+.promotions-container .promotion-card:hover .promotion-title {
+  color: #ff6b35;
+}
+
+.promotions-container .image {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.promotions-container .image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.promotions-container .image img:hover {
+  transform: scale(1.02);
+}
+
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid #f0f0f0;
+  border-top-color: #ff6b35;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@media (max-width: 768px) {
+  .promotions-container .title-row h1 {
+    font-size: 28px;
+  }
+
+  .promotions-container .promotions-list {
+    grid-template-columns: 1fr;
+  }
+
+  .promotions-container .image img {
+    height: 200px;
+  }
+}

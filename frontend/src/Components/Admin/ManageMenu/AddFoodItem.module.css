@@ -1,0 +1,190 @@
+.add-food {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px auto;
+  padding: 30px;
+  max-width: 700px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.add-food h2 {
+  text-align: center;
+  font-size: 42px;
+  font-weight: bold;
+  color: #514f00;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+.add-food form {
+  display: flex;
+  gap: 70px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.add-food .left-side {
+  flex: 0 0 40%;
+  font-size: 18px;
+  align-items: center;
+}
+
+.add-food .right-side {
+  flex: 1;
+}
+
+.add-food .form-group {
+  width: 100%;
+}
+
+.add-food .form-group label {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.add-food .form-group input,
+.add-food .form-group select,
+.add-food .form-group textarea {
+  width: 100%;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.add-food .form-group textarea {
+  height: 180px;
+}
+
+.add-food .image-upload-button {
+  padding: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f8f5f5;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.add-food .image-upload-button:hover {
+  transform: translateY(-2px);
+}
+
+.add-food .form-img img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-food .form-img p.placeholder {
+  font-size: 18px;
+  color: #aaa;
+  text-align: center;
+  margin-top: 2px;
+  margin-bottom: 0;
+}
+
+.add-food .form-img .instructions {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}
+
+.add-food .button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.add-food .submit-button,
+.add-food .cancel-button {
+  flex: 1;
+  max-width: 200px;
+  text-align: center;
+}
+
+.add-food .submit-button {
+  display: block;
+  margin: 30px 0 20px auto;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: #116169;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-food .submit-button:hover {
+  background-color: #1e7f8b;
+  transform: translateY(-2px);
+}
+
+.add-food .cancel-button {
+  display: block;
+  margin: 30px 0 20px auto;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: #d3d3d3;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-food .cancel-button:hover {
+  background-color: #b3b3b3;
+  transform: translateY(-2px);
+}
+
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

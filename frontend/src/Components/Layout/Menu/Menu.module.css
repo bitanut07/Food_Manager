@@ -1,0 +1,346 @@
+.container {
+  composes: container from "../../../Style/bootstrap.min.css";
+}
+
+.row {
+  composes: row from "../../../Style/bootstrap.min.css";
+}
+
+.col-lg-12 {
+  composes: col-lg-12 from "../../../Style/bootstrap.min.css";
+}
+
+.col-lg-3 {
+  composes: col-lg-3 from "../../../Style/bootstrap.min.css";
+}
+
+.col-lg-9 {
+  composes: col-lg-9 from "../../../Style/bootstrap.min.css";
+}
+
+.section-title {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+}
+
+.section-title p {
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 3px 20px;
+  font-family: "Playfair Display", serif;
+  color: #a38900;
+  font-size: 46px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.section-title h2 {
+  font-size: 46px;
+  line-height: 56px;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.menu-container {
+  margin-top: 30px;
+}
+
+.menu-tab-row {
+  margin-bottom: 25px;
+}
+
+.menu-tab {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 10px;
+}
+
+.menu-tab ul {
+  list-style: none;
+  display: flex;
+  gap: 15px; /* Giảm khoảng cách giữa các mục menu */
+  margin: 0;
+  padding: 0;
+}
+
+.menu-tab-btn {
+  padding: 12px 24px;
+  border: none;
+  background-color: #f4f4f4; /* light gray for non-active tabs */
+  color: #333;
+  cursor: pointer;
+  border-radius: 30px; /* rounded buttons */
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.menu-tab-btn.active {
+  background-color: #ad6d4d; /* distinct color */
+  color: white;
+}
+
+.menu-item {
+  text-align: center;
+  border-radius: 30px;
+  background: linear-gradient(145deg, #ececec, #ffffff);
+  box-shadow: 28px 28px 45px #d4d4d4, -28px -28px 45px #ffffff;
+  display: flow-root;
+  padding: 0 30px 40px;
+  padding-top: 0;
+  margin: 130px 0 30px;
+  transition: 0.3s cubic-bezier(0.22, 0.78, 0.45, 1.02);
+  font-family: "Playfair Display", serif;
+}
+
+.menu-item:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.menu-item img {
+  width: 250px;
+  height: 250px;
+  margin-top: -130px;
+  margin-bottom: 30px;
+  box-shadow: 28px 28px 45px #d4d4d4, -28px -28px 45px #ffffff;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.menu-item h3 {
+  font-size: 30px;
+  padding: 0 10px;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+  color: #0d0d25;
+  min-height: 76px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-weight: 900;
+}
+
+.menu-item p {
+  border-top: 2px solid rgb(204 204 204 / 40%);
+  margin-top: 30px;
+  font-size: 25px;
+  padding: 0 30px;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+  color: #0d0d25;
+  font-weight: 750;
+}
+
+.menu-item button {
+  font-size: 20px;
+  background: #f3f3f5;
+  box-shadow: 9px 9px 12px #b2b2b3, -9px -9px 12px #ffffff;
+  display: inline-flex;
+  justify-content: center;
+  border-radius: 30px;
+  color: #0d0d25;
+  text-transform: capitalize;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  outline: none !important;
+  overflow: hidden;
+  position: relative;
+  padding: 6px 30px;
+  transition: all 0.3s ease;
+}
+
+.menu-item button:hover {
+  border-color: #0d0d25;
+  box-shadow: inset 9px 9px 12px #cccccc, inset -9px -9px 12px #ffffff;
+  color: #ff8243;
+}
+
+.search-row {
+  display: flex;
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 3px solid rgba(0, 0, 0, 0.4);
+}
+
+.search-menuitem {
+  position: relative;
+  align-items: center;
+}
+
+.input-search-menuitem {
+  width: 100%;
+  padding-right: 2.5rem;
+  padding-left: 1rem;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-search-btn {
+  position: absolute;
+  right: 0.5rem; /* Position the button slightly from the right edge */
+  top: 50%;
+  transform: translateY(-50%); /* Vertically center the button */
+  background: none; /* Remove default background */
+  border: none; /* Remove default border */
+  padding: 0.5rem; /* Add padding for aesthetics */
+  cursor: pointer; /* Make the button clickable */
+}
+
+.search-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.input-price input {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex: 1;
+  width: 100%;
+}
+
+.Error-container {
+  padding: 20px;
+  margin: auto;
+  margin-top: 30px;
+  width: 500px;
+  text-align: center;
+  border: 2px solid rgba(255, 56, 56, 0.5);
+  border-radius: 8px;
+  background-color: rgba(255, 56, 56, 0.2);
+}
+
+.Error-container h2 {
+  color: #ff3838;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.Error-container p {
+  color: black;
+  font-size: 30px;
+}
+
+.btn-ctn {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn-ctn button {
+  background-color: transparent;
+  color: black;
+  border: 2px solid #1a1a1a;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 30px;
+  outline: 0;
+  padding: 8px 12px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  transition: all 0.3s ease;
+}
+
+.btn-ctn button.active-btn {
+  color: #fff;
+  background-color: #1a1a1a;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+}
+
+.btn-ctn button:hover {
+  color: #fff;
+  background-color: #1a1a1a;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+}
+
+.btn-ctn button.next-btn {
+  padding: 6px;
+}
+
+.page-num {
+  font-size: 18px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 10px;
+  font-family: "Playfair Display", serif;
+}
+
+.item-description {
+  max-width: 100%;
+  height: 70px;
+  overflow: hidden;
+}
+
+.scroll-menu-tab {
+  max-width: 600px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.scroll-menu-tab li {
+  white-space: nowrap;
+}
+
+.scroll-btn {
+  border: none;
+  background-color: transparent;
+}
+
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

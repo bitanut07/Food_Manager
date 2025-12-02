@@ -1,0 +1,138 @@
+/* src/Style/AdminStyle/AdminLayout.module.css */
+
+.admin-dashboard {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100%;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+.admin-dashboard .dashboard-header {
+  background-color: #4e6986;
+  color: #fff;
+  padding: 1rem 1rem;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  justify-content: space-between;
+}
+
+.admin-dashboard .header-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.admin-dashboard .header-content h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  flex: 1;
+}
+
+.header-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.employee-btn,
+.logout-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.employee-btn {
+  background: #c9a227;
+  color: white;
+}
+
+.employee-btn:hover {
+  background: #b8931f;
+}
+
+.logout-btn {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.logout-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.admin-dashboard .dashboard-container {
+  display: flex;
+  flex: 1;
+}
+
+.admin-dashboard .sidebar {
+  font-size: 18px;
+  width: 225px;
+  background-color: #ffffff;
+  color: #35737d;
+  padding: 1rem;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.admin-dashboard .menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.admin-dashboard .menu-item {
+  padding: 1rem;
+  margin: 0.5rem 0;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.admin-dashboard .menu-item:hover {
+  opacity: 0.9;
+  color: #000000;
+}
+
+.admin-dashboard .icon {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #35737d;
+}
+
+.admin-dashboard .main-content {
+  flex: 1;
+  background-color: #fff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-toggle-button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 0;
+  padding: 0;
+  margin-right: 10px;
+  color: #fff;
+}
+
+.menu-toggle-button:hover {
+  color: #d8dde3;
+}
+
+.sidebar.hidden {
+  display: none;
+}
+
+.sidebar.visible {
+  display: block;
+}

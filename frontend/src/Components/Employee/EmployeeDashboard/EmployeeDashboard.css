@@ -1,0 +1,38 @@
+.employee-dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.employee-dashboard h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.dashboard-actions {
+    display: flex;
+    gap: 20px;
+}
+
+.action-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+    background-color: #0056b3;
+}
+
+.empty-number-table{
+    
+}

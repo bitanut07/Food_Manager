@@ -1,0 +1,164 @@
+.viewport {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.main-banner {
+  /* padding: 200px 0 300px; */
+  min-height: 100vh;
+  position: relative;
+}
+
+.js-parallax-scene {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.banner-shape-1 img {
+  position: absolute;
+  left: 85%;
+  top: 60px;
+  max-width: 150px;
+  pointer-events: none;
+  filter: blur(3px);
+  width: 100%;
+  z-index: -1;
+}
+
+.banner-shape-2 {
+  top: auto !important;
+  bottom: 0;
+}
+
+.banner-shape-2 img {
+  position: absolute;
+  bottom: 0;
+  right: 82% !important;
+  max-width: 410px;
+  pointer-events: none;
+  filter: blur(3px);
+  width: 100%;
+  z-index: -1;
+}
+
+.row {
+  composes: row from "../../../Style/bootstrap.min.css";
+}
+
+.col-lg-6 {
+  composes: col-lg-6 from "../../../Style/bootstrap.min.css";
+}
+
+.banner-text {
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  flex-direction: column;
+  height: 100%;
+}
+
+.banner-text h1 {
+  font-size: 90px;
+  color: #1a1a1a;
+  font-family: "Playfair Display", serif;
+  line-height: 108px;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+  font-weight: 900;
+}
+
+.banner-text h1 span {
+  display: block; /* Đưa phần span xuống dòng */
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: "Lobster", cursive; /* Áp dụng font chữ khác */
+  font-size: 100px; /* Thay đổi kích thước chữ */
+  background: linear-gradient(45deg, #ff8243, #ad6d4d);
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 200%;
+  margin-top: 10px; /* Khoảng cách trên cho span */
+}
+
+.cta-button {
+  min-width: 120px;
+  min-height: 58px;
+  background: #f3f3f5;
+  box-shadow: 9px 9px 12px #b2b2b3, -9px -9px 12px #ffffff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  color: #0d0d25;
+  text-transform: capitalize;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  outline: none !important;
+  overflow: hidden;
+  position: relative;
+  padding: 6px 30px;
+}
+
+.cta-button:hover {
+  border-color: #0d0d25;
+  box-shadow: inset 9px 9px 12px #cccccc, inset -9px -9px 12px #ffffff;
+  color: #ad6d4d;
+}
+
+.banner-img-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+  justify-content: center;
+}
+
+.banner-img {
+  width: 90%;
+  height: 70%;
+  background-size: cover;
+  background-position: center;
+  animation: biani 4.5s linear infinite alternate;
+  box-shadow: 0 0px 20px rgba(36, 39, 37, 0.3);
+}
+
+@keyframes biani {
+  0% {
+    border-radius: 48% 52% 57% 43% / 34% 44% 56% 66%;
+  }
+  25% {
+    border-radius: 62% 38% 64% 36% / 34% 55% 45% 66%;
+  }
+  50% {
+    border-radius: 43% 57% 51% 49% / 33% 42% 58% 67%;
+  }
+  100% {
+    border-radius: 40% 60% 43% 57% / 52% 32% 68% 48%;
+  }
+}
+
+.banner-img-text .h5-title {
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  color: #0d0d25;
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-size: 40px;
+}
+
+.img-text {
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}

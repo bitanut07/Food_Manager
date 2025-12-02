@@ -1,0 +1,41 @@
+.snowflake {
+    position: fixed;
+    top: -10px;
+    color: #d7aee6;
+    font-size: 6px;
+    animation: fall linear infinite, sway ease-in-out infinite;
+    z-index: 9999;
+    pointer-events: none; /* Để không làm ảnh hưởng đến sự tương tác của người dùng */
+  }
+  
+  /* Animation rơi xuống */
+  @keyframes fall {
+    0% {
+      top: -10px;
+      opacity: 1; /* Bông tuyết bắt đầu xuất hiện rõ */
+    }
+    100% {
+      top: 100vh; /* Rơi đến hết chiều cao màn hình */
+      /*opacity: 0;  Bông tuyết biến mất dần */
+    }
+  }
+  
+  /* Animation đung đưa trái phải */
+  @keyframes sway {
+    0% {
+      transform: translateX(0); /* Vị trí ban đầu */
+    }
+    25% {
+      transform: translateX(-15px); /* Sang trái */
+    }
+    50% {
+      transform: translateX(15px); /* Sang phải */
+    }
+    75% {
+      transform: translateX(-10px); /* Sang trái nhẹ */
+    }
+    100% {
+      transform: translateX(0); /* Quay về ban đầu */
+    }
+  }
+  

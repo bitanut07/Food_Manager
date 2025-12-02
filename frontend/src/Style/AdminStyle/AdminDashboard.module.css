@@ -1,0 +1,25 @@
+.content {
+  display: flex;
+  margin-top: 300px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.content h3 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.content p {
+  font-size: 24px;
+  line-height: 1.5;
+  max-width: 600px;
+  color: #2a2b2c;
+}

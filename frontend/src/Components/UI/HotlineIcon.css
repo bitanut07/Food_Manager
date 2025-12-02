@@ -1,0 +1,46 @@
+.hotline-icon {
+    position: fixed;
+    bottom: 20px; /* Vị trí cách đáy */
+    right: 20px; /* Vị trí cách cạnh phải */
+    z-index: 1000; /* Luôn nằm trên các thành phần khác */
+  }
+  
+  .icon-wrapper {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: #167c6f; /* Màu đỏ */
+    border-radius: 50%; /* Hình tròn */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hiệu ứng bóng */
+    cursor: pointer; /* Con trỏ chuột */
+    transition: transform 0.2s ease; /* Hiệu ứng hover */
+  }
+  
+  .icon-wrapper:hover {
+    transform: scale(1.1); /* Phóng to khi hover */
+  }
+  
+  .icon-wrapper i {
+    font-size: 28px; /* Kích thước icon */
+    color: white; /* Màu icon */
+  }
+  
+  .notification-badge {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #f44336; /* Màu đỏ thông báo */
+    color: white; /* Màu chữ thông báo */
+    font-size: 14px; /* Kích thước chữ */
+    width: 20px; /* Kích thước vòng tròn */
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* Hình tròn */
+    font-weight: bold;
+  }
+  

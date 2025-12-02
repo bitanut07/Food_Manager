@@ -1,0 +1,209 @@
+.container {
+  composes: container from "../../../Style/bootstrap.min.css";
+}
+
+.row {
+  composes: row from "../../../Style/bootstrap.min.css";
+}
+
+.col-lg-12 {
+  composes: col-lg-12 from "../../../Style/bootstrap.min.css";
+}
+
+.point-input{
+  cursor: pointer;
+}
+
+.ctn {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 101;
+}
+
+.promotion-ctn {
+  width: 70%;
+  height: 500px;
+  padding: 10px 20px;
+  background-color: white;
+  overflow: auto;
+  margin: 0px 20px;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.promotion-ctn h2 {
+  margin-bottom: 0px;
+}
+
+.promotion-table {
+  width: 100%;
+  margin: 20px auto 20px auto;
+  padding-right: 16px;
+  height: 200px;
+  overflow-y: auto;
+}
+
+.my-row ul {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.my-row ul li {
+  margin: 0;
+  font-size: 18px;
+  list-style: none;
+  display: inline-block;
+  height: 100%;
+  white-space: nowrap;
+  box-sizing: border-box;
+  border-left: 1px solid black;
+  padding-left: 10px;
+}
+
+.my-col-1 {
+  width: 15%;
+}
+
+.my-col-2 {
+  width: 32%;
+}
+
+.my-col-3 {
+  width: 10%;
+}
+
+.my-col-4 {
+  width: 18%;
+}
+
+.my-col-5 {
+  width: 15%;
+}
+
+.my-row ul .add-button {
+  width: 10%;
+  border-left: none;
+}
+
+.choosen-promotion-table {
+  width: 100%;
+  margin: 20px auto 20px auto;
+  padding-right: 16px;
+  height: 150px;
+  overflow-y: auto;
+}
+
+.add-button button {
+  margin-left: 50%;
+  border: none;
+  background-color: transparent;
+}
+
+.my-row {
+  border-bottom: 1px solid black;
+}
+
+.my-title-row {
+  background-color: #a3c6cb;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  font-weight: bold;
+}
+
+.sdt-input {
+  margin-top: 20px;
+}
+
+.btn-ctn {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.btn-ctn button {
+  background-color: transparent;
+  border: 2px solid #1a1a1a;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 30px;
+  outline: 0;
+  padding: 6px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  transition: all 0.3s ease;
+}
+
+.btn-ctn button:hover {
+  color: #fff;
+  background-color: #1a1a1a;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+}
+
+.error-ctn {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 20px;
+  margin-top: 10px;
+}
+
+.error-ctn .error {
+  color: red;
+}
+
+.error-ctn .success {
+  color: green;
+}
+
+.error-ctn p {
+  font-size: 18px;
+}
+
+.row-inactive {
+  opacity: 0.5;
+}
+
+.promotion-list p {
+  font-size: 18px;
+}
+
+.close-ctn {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 30px;
+}
+
+.close-modal {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.close-modal:hover {
+  color: #333;
+}

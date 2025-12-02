@@ -1,0 +1,415 @@
+.container{
+    composes: container from '../../../Style/bootstrap.min.css';
+}
+
+.row{
+    composes: row from '../../../Style/bootstrap.min.css';
+}
+
+.col-lg-12{
+    composes: col-lg-12 from '../../../Style/bootstrap.min.css';
+}
+
+.col-lg-2{
+    composes: col-lg-2 from '../../../Style/bootstrap.min.css';
+}
+
+.col-lg-6{
+    composes: col-lg-6 from '../../../Style/bootstrap.min.css';
+}
+
+.my-input-date{
+    border:none;
+    font-size: 16px;
+}
+
+
+.my-input-row{
+    margin-top:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.yellow{
+    background-color: rgba(255, 223, 116, 0.7);
+}
+
+.red{
+    background-color: rgba(255, 153, 153, 0.7);
+}
+
+.blue{
+    background-color: rgba(110, 198, 241, 0.7);
+}
+
+.green{
+    background-color: rgba(144, 238, 144, 0.7);
+}
+
+/* Admin Navigation Bar */
+.admin-nav-bar {
+    background: linear-gradient(135deg, #35737d 0%, #2a5d65 100%);
+    padding: 12px 24px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.admin-dashboard-btn {
+    background: #c9a227;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 6px rgba(201, 162, 39, 0.3);
+}
+
+.admin-dashboard-btn:hover {
+    background: #b8931f;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(201, 162, 39, 0.4);
+}
+
+.EER-container{
+    font-family: 'Playfair Display', serif;
+}
+
+.Table-container{
+    margin: 20px;
+    padding: 20px;
+}
+
+.table-info{
+    text-align: center;
+}
+
+
+.body-EER{
+    display: grid; 
+    grid-template-columns:300px 1fr; 
+    height: 100vh;
+    overflow: auto;
+}
+
+.sidebar-container{
+    height: 100%; 
+    width: 300px; 
+    z-index: 1; 
+    top: 0; 
+    right: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    padding: 10px;
+}
+
+.section-title {
+    border-bottom:1px solid #ff8243;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-r-title{
+    border-bottom:1px solid #ff8243;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-r-title h2{
+    color: #ff8243;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.status-reservation-info{
+    display: flex;
+    gap:20px;
+}
+
+
+.table-status-info{
+    display:flex;
+    gap:40px;
+}
+
+.section-status-info{
+    display: flex;
+    flex-direction: column;
+    width:64px;
+}
+
+.section-title h2{
+    color: #ff8243;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.my-square{
+    width: 35px;
+    height: 35px;
+}
+
+.red-square{
+    background-color: red;
+}
+
+
+.search-row{
+    display:flex;
+    padding-top: 20px;
+}
+
+.search-cus{
+    position: relative;
+    align-items: center;
+}
+
+.input-search-cus{
+    width: 100%;
+    padding-right: 2.5rem;
+    padding-left: 1rem;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+}
+
+.input-search-btn{
+    position: absolute;
+    right: 0.5rem; /* Position the button slightly from the right edge */
+    top: 50%;
+    transform: translateY(-50%); /* Vertically center the button */
+    background: none; /* Remove default background */
+    border: none; /* Remove default border */
+    padding: 0.5rem; /* Add padding for aesthetics */
+    cursor: pointer; /* Make the button clickable */
+}
+
+.status-search-row{
+    margin-top:20px;
+}
+
+.status-search{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.status-search ul{
+    list-style: none;
+    display: flex;
+    gap: 15px; /* Giảm khoảng cách giữa các mục menu */
+    margin: 0;
+    padding: 0;
+}
+
+.status-search-btn{
+    padding: 10px 20px;
+    border: none;
+    background-color: #f4f4f4; /* light gray for non-active tabs */
+    color: #333;
+    cursor: pointer;
+    border-radius: 30px; /* rounded buttons */
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.status-search-btn.active{
+    background-color: #ff8243; /* distinct color */
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.reservation-info{
+    margin-top: 20px;
+    box-sizing: border-box;
+    border:2px solid rgb(204 204 204 / 80%);
+    padding-bottom: 10px;
+}
+
+.reservation-info h5{
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.reservation-info p{
+    padding:0px 10px;
+    margin-bottom: 10px;
+}
+
+.input-table-ctn{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-table-text{
+}
+
+.input-table-btn{
+}
+
+.input-table-edit-btn{
+    background-color:transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.input-table-edit-btn:hover{
+    color: cornflowerblue;
+}
+
+.input-table-edit-btn.inactive-btn{
+    color:black;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.input-table-edit-btn.inactive-btn:hover{
+    color:black;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.input-table-erase-btn.inactive-btn{
+    color:black;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.input-table-erase-btn.inactive-btn:hover{
+    color:black;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.input-table-erase-btn{
+    background-color:transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.input-table-erase-btn:hover{
+    color:crimson;
+}
+
+.input-table-input{
+    display: flex;
+    flex-direction: row;
+}
+
+.input-table-input input{
+    height: 30px;
+    width: 70px;
+}
+
+.status-btn.inactive-btn{
+    border: 1px solid #1A1A1A;
+    color:black;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.status-btn.inactive-btn:hover{
+    color: black;
+    background-color: transparent;
+    box-shadow:rgba(0, 0, 0, 0.1) 1px 2px 4px;
+}
+
+.status-btn-ctn{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+}
+
+.status-btn{
+    background-color: transparent;
+    border: 1px solid #1A1A1A;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 14px;
+    min-height: 20px;
+    outline: 0;
+    padding: 6px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    transition: all 0.3s ease;
+  }
+  
+.status-btn:hover{
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  }
+
+.table-info{
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.empty-number-table{
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.table-info-ctn p{
+    margin-bottom: 0px;
+}
+
+.error-message{
+    color: red; 
+    font-weight: bold; 
+    font-size: 16px; 
+    margin-top: 8px; 
+    border-left: 4px solid red; 
+    padding-left: 8px;
+  }
+
+.my-note{
+    word-wrap: break-word; /* For old browsers */
+      word-break: break-word; /* For modern browsers */
+      overflow-wrap: break-word; /* For best support */
+}
+
+.reservation-header{
+    display: flex;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(204 204 204 / 80%);
+    margin-bottom:10px;
+}
+
+.reservation-header h5{
+    margin-bottom: 0px;
+}
+
+.edit-reservation{
+    border: none;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    margin:auto 0px;
+    cursor: pointer;
+}

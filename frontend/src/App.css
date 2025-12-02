@@ -1,0 +1,17 @@
+/* Định dạng chung cho ứng dụng */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-image: url('/public/assets/images/menu-bg.png');
+}
+
+/* Định dạng cho App container */
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Định dạng cho header và footer */
+
+
+/* Định dạng cho các link trong app */

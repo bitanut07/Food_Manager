@@ -1,0 +1,113 @@
+.review-info-ctn{
+    text-align: center;
+}
+
+.rating-text-ctn{
+}
+
+.my-ctn{
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-ctn h2{
+  font-size: 40px;
+  font-family:'Playfair Display', serif;
+}
+
+.rating-text-ctn textarea{
+    display: block;
+    margin:auto;
+    font-size: 18px;
+}
+
+.review-ctn{
+    margin-top: 30px;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 30px;
+}
+
+.review-title p{
+    font-weight: 100;
+}
+
+.review-ctn p{
+    font-size: 18px;
+}
+.title h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.point-section p{
+    margin-top:20px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.error-ctn{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 40px;
+    margin-top:10px;
+  }
+  
+  .error-ctn .error{
+    color: red;
+  }
+  
+  .error-ctn .success{
+    color: green;
+  }
+  
+  .error-ctn p {
+    font-size: 22px;
+  }
+
+  .btn-ctn button{
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-height: 30px;
+    outline: 0;
+    padding: 6px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-ctn button:hover{
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  }
+.input-name{
+    margin-top:30px;
+    justify-content: left;
+    font-size: 18px;
+}  
+
+.error-ctn .success {
+  color: green;
+}
+
+.my-input-name{
+    width: 378px;
+    padding: 5px 10px;
+}

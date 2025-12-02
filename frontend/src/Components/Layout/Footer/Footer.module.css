@@ -1,0 +1,204 @@
+/* src/Components/Footer.css */
+
+.site-footer {
+  font-size: 18px;
+  background-color: #ffff;
+}
+
+.top-footer,
+.bottom-footer {
+  border-top: 1px solid rgb(204 204 204 / 40%);
+  position: relative;
+}
+
+.section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+.sec-wp {
+  position: relative;
+  z-index: 4;
+}
+
+.container {
+  composes: container from "../../../Style/bootstrap.min.css";
+}
+
+.row {
+  composes: row from "../../../Style/bootstrap.min.css";
+}
+
+.col-lg-4 {
+  composes: col-lg-4 from "../../../Style/bootstrap.min.css";
+}
+
+.col-lg-8 {
+  composes: col-lg-8 from "../../../Style/bootstrap.min.css";
+}
+
+.footer-info .social-icon {
+  list-style-type: none;
+  margin-top: 20px;
+}
+.social-icon ul {
+  display: flex; /* Sắp xếp theo hàng ngang */
+  justify-content: center; /* Căn giữa các biểu tượng */
+  padding: 0; /* Loại bỏ padding mặc định */
+  list-style: none; /* Bỏ dấu chấm trước các mục */
+  gap: 20px; /* Khoảng cách giữa các biểu tượng */
+}
+
+.social-icon ul li {
+  background-color: #f5f5f5; /* Màu nền mặc định */
+  border-radius: 50%; /* Làm tròn các biểu tượng */
+  width: 50px; /* Kích thước biểu tượng */
+  height: 50px;
+  display: flex;
+  align-items: center; /* Căn giữa nội dung theo chiều dọc */
+  justify-content: center; /* Căn giữa nội dung theo chiều ngang */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Thêm bóng mềm */
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.social-icon ul li:hover {
+  transform: scale(1.1); /* Phóng to khi hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Tăng bóng khi hover */
+  background-color: #ad6d4d; /* Nền chuyển sang màu cam */
+}
+
+.social-icon ul li a {
+  color: #ad6d4d; /* Màu icon mặc định */
+  font-size: 24px; /* Kích thước icon */
+  transition: color 0.3s; /* Hiệu ứng mượt khi đổi màu */
+}
+
+.social-icon ul li:hover a {
+  color: #fff; /* Màu icon chuyển sang trắng khi hover */
+}
+
+
+.footer-logo {
+  margin-bottom: 30px;
+}
+
+
+.footer-flex-box {
+  display: flex;
+  margin: 0 -10px;
+}
+
+.footer-flex-box > div {
+  flex: 1;
+  padding: 0 10px;
+}
+
+.footer-flex-box .h3-title {
+  text-transform: capitalize;
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-size: 40px;
+  margin-bottom: 23px;
+}
+
+.footer-menu,
+.footer-table-info,
+.footer-info {
+  text-align: left; /* Căn trái nội dung của từng cột */
+}
+.footer-menu ul,
+.footer-table-info ul {
+  padding: 0;
+  margin: 0;
+  list-style: none; /* Bỏ ký hiệu trước các mục */
+}
+
+.footer-table-info ul li {
+  margin-bottom: 10px;
+  list-style-type: none;
+  text-transform: capitalize;
+}
+.footer-table-info ul li i {
+  color: #ad6d4d; /* Màu cam cho icon */
+  margin-right: 10px; /* Tạo khoảng cách giữa icon và text */
+  font-size: 20px; /* Điều chỉnh kích thước icon nếu cần */
+  vertical-align: middle; /* Căn giữa icon với text */
+}
+
+
+.footer-menu ul li a {
+  color: #0d0d25;
+  transition: 0.3s;
+  text-transform: capitalize;
+}
+
+.footer-menu ul li a:hover,
+.footer-menu ul li .footer-active-menu {
+  color: #ad6d4d;
+}
+
+.footer-menu ul li {
+  display: flex; /* Đặt các mục theo hàng ngang */
+  align-items: center; /* Căn giữa icon và text */
+  margin-bottom: 10px; /* Khoảng cách giữa các mục */
+  /* white-space: nowrap; Ngăn nội dung xuống dòng */
+}
+
+
+.footer-menu ul li a {
+  text-decoration: none; /* Bỏ gạch chân */
+  color: #333; /* Màu chữ mặc định */
+  transition: color 0.3s; /* Hiệu ứng chuyển màu khi hover */
+  display: flex; /* Để icon và text nằm ngang */
+  align-items: center; /* Căn giữa icon và text */
+}
+
+.footer-menu ul li a:hover {
+  color: #ad6d4d; /* Màu chữ khi hover */
+}
+
+.footer-menu ul li i {
+  color: #ad6d4d; /* Màu icon mặc định */
+  font-size: 20px; /* Kích thước icon */
+  margin-right: 10px; /* Khoảng cách giữa icon và text */
+  transition: color 0.3s; /* Hiệu ứng chuyển màu icon khi hover */
+}
+
+.footer-links {
+  margin-left: 30px; /* Chỉ áp dụng margin cho Links */
+}
+.footer-open{
+  margin-left: 30px;
+}
+
+
+.col-lg-12 {
+  composes: col-lg-12 from "../../../Style/bootstrap.min.css";
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.copyright-text {
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  padding: 20px 0;
+}
+
+.copyright-text p {
+  margin: 0;
+}
+
+.name {
+  color: #ad6d4d;
+  font-weight: bold;
+}
+.footer-menu ul li img {
+  width: 24px; /* Điều chỉnh kích thước theo nhu cầu, ví dụ 24px */
+  height: auto; /* Đảm bảo giữ tỉ lệ hình ảnh */
+  margin-right: 10px; /* Tạo khoảng cách giữa ảnh và text nếu cần */
+  vertical-align: middle; /* Căn giữa theo chiều dọc với text */
+}
+

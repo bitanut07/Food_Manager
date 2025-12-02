@@ -1,0 +1,253 @@
+.container{
+    composes: container from '../../../Style/bootstrap.min.css';
+}
+
+.row{
+    composes: row from '../../../Style/bootstrap.min.css';
+}
+
+.col-lg-12{
+    composes: col-lg-12 from '../../../Style/bootstrap.min.css';
+}
+
+.col-lg-6{
+    composes: col-lg-6 from '../../../Style/bootstrap.min.css';
+}
+
+.col-lg-4{
+    composes: col-lg-4 from '../../../Style/bootstrap.min.css';
+}
+
+.col-lg-9{
+  composes: col-lg-9 from '../../../Style/bootstrap.min.css';
+}
+
+
+.col-lg-3{
+  composes: col-lg-3 from '../../../Style/bootstrap.min.css';
+}
+
+
+.ctn{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 101; 
+}
+
+.export-invoice-ctn{
+    width: 60%;
+    height: 600px;
+    padding: 10px 20px;
+    background-color: white;
+    overflow: auto;
+    margin: 0px 20px;
+    border-radius: 5px;
+    margin:auto;
+}
+
+.ordered-food-ctn{
+}
+
+.table-food{
+  width: 100%;
+  margin:20px auto 20px auto;
+  padding-right: 16px;
+  height: 150px;
+  overflow-y: auto;
+}
+
+.table-food::-webkit-scrollbar {
+  width: 0; /* Ẩn thanh cuộn ngang */
+  background: transparent; /* Nền trong suốt */
+}
+
+.my-row ul {
+  margin:0;
+  padding:0px;
+}
+.my-row ul li  {
+  margin:0;
+  font-size: 18px;
+  list-style:none;
+  display:inline-block;
+  box-sizing:border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.my-row{
+  border-bottom: 1px solid black;
+}
+
+.my-title-row{
+  background-color:#a3c6cb;
+  position: sticky;
+  top:0;
+  z-index: 1;
+  font-weight: bold;
+}
+
+.total-money-ctn{
+    display: flex;
+    font-size: 18px;
+    padding:5px
+}
+
+.width-100{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.money-format{
+  display: flex;
+  justify-content: space-between;
+}
+
+.money-format p{
+  align-items: end;
+}
+
+.final_price{
+  margin-top: 15px;
+  border-top: 5px double #b2b2b3;
+}
+
+.close-ctn{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height:30px;
+  }
+  
+  .close-modal {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #666;
+    transition: color 0.3s ease;
+  }
+  
+  .close-modal:hover {
+    color: #333;
+  }
+
+.food-col-1{
+    width: 60%;
+}
+
+.food-col-2{
+    width: 15%;
+}
+
+.food-col-3{
+    width: 25%;
+}
+
+.qr-ctn{
+    /* border-left: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.qr-ctn p{
+    font-size: 18px;
+}
+
+.btn-ctn{
+    margin-top:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+    margin-bottom: 30px;
+  }
+  
+  .btn-ctn button{
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-height: 30px;
+    outline: 0;
+    padding: 6px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-ctn button:hover{
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  }
+  .promotion-table{
+    width: 100%;
+    margin:20px auto 20px auto;
+    padding-right: 16px;
+    height: 80px;
+    overflow-y: auto;
+  }
+
+  .my-col-1{
+    width: 12%;
+  }
+  
+  .my-col-2{
+    width: 35%;
+  }
+  
+  .my-col-3{
+    width: 10%;
+  }
+  
+  .my-col-4{
+    width: 18%;
+  }
+  
+  .my-col-5{
+    width: 25%;
+  }
+
+  .title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+  .error-ctn{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 20px;
+    margin-top:10px;
+  }
+  
+  .error-ctn .error{
+    color: red;
+  }
+  

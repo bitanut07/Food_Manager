@@ -1,0 +1,212 @@
+.container {
+  composes: container from "../../Style/bootstrap.min.css";
+}
+
+.col-lg-6 {
+  composes: col-lg-6 from "../../Style/bootstrap.min.css";
+}
+
+.col-lg-3 {
+  composes: col-lg-3 from "../../Style/bootstrap.min.css";
+}
+
+.row {
+  composes: row from "../../Style/bootstrap.min.css";
+}
+.review-info-ctn {
+  font-family: "Playfair Display", serif;
+}
+.display-end{
+    justify-content: end;
+    align-items: center;
+}
+.filter-ctn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.filter-category{
+    z-index: 50;
+  }
+
+  .page-input-ctn{
+    margin-top: 10px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .page-num-top{
+    font-size: 18px;
+    align-items: center;
+    justify-content: left;
+    display: flex;
+    margin-top:10px;
+  }
+
+  .input-page{
+    height:36px;
+  }
+
+.filter-category {
+  display: flex;
+  gap: 10px;
+  height: 30px;
+}
+
+.filter-category select {
+  font-size: 18px;
+}
+
+.filter-select {
+  border: none;
+  outline: none;
+  appearance: none; /* Ẩn mũi tên trên hầu hết các trình duyệt */
+  -webkit-appearance: none; /* Ẩn mũi tên trên Safari và Chrome */
+  -moz-appearance: none; /* Ẩn mũi tên trên Firefox */
+}
+
+.filter-date {
+  display: flex;
+  gap: 10px;
+  height: 30px;
+}
+
+.filter-date p {
+  font-size: 18px;
+}
+
+.my-input-date {
+  border: none;
+  font-size: 18px;
+}
+
+.review-title-ctn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.review-title-ctn h4 {
+  font-size: 35px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #a38900;
+}
+
+.name-star {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feedback-item {
+  border-radius: 10px;
+  background: linear-gradient(145deg, #ececec, #ffffff);
+  box-shadow: 8px 8px 15px #d4d4d4, -8px -8px 15px #ffffff;
+  display: flow-root;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 30px;
+  transition: 0.3s cubic-bezier(0.22, 0.78, 0.45, 1.02);
+  font-family: "Playfair Display", serif;
+}
+
+.feedback-item h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.feedback-item p {
+  font-size: 18px;
+}
+
+.name-star p {
+  font-size: 15px;
+}
+
+.comment-ctn {
+  margin-top: 10px;
+  border-top: 1px solid black;
+  padding: 20px;
+  padding-bottom: 0px;
+}
+
+.btn-ctn {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn-ctn button {
+  background-color: transparent;
+  color: black;
+  border: 2px solid #1a1a1a;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 30px;
+  outline: 0;
+  padding: 6px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  transition: all 0.3s ease;
+}
+
+.btn-ctn button:hover {
+  color: #fff;
+  background-color: #1a1a1a;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+}
+
+.page-num {
+  font-size: 18px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 10px;
+}
+
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

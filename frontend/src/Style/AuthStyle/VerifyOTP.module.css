@@ -1,0 +1,74 @@
+.OTP-container {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.verify-otp-container {
+  padding: 50px;
+  width: 60%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  margin-bottom: 300px;
+  margin-top: 100px;
+  border-radius: 10px;
+  font-family: "Playfair Display", serif;
+}
+
+.otp-input {
+  padding: 10px;
+  font-size: 18px;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.otp-input:focus {
+  border-color: #35737d; /* Đổi màu viền khi focus */
+  outline: none; /* Ẩn đường viền mặc định */
+}
+.verify-otp-container h2 {
+  font-size: 40px;
+  color: #35737d;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+.success-message {
+  color: green;
+  margin-top: 10px;
+}
+
+.verify-button,
+.re-verify-button {
+  width: 200px;
+  padding: 10px;
+  background-color: #116169;
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.verify-button:hover,
+.re-verify-button:hover {
+  background-color: #1e7f8b;
+  transform: translateY(-2px);
+}
